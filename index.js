@@ -1,6 +1,8 @@
-import { config } from "dotenv";
-config();
-export default function vitePluginHtmlVariables({ prefix = "{{", suffix = "}}", variables = {}, excludeEnvVariables = false, }) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const dotenv_1 = require("dotenv");
+(0, dotenv_1.config)();
+function vitePluginHtmlVariables({ prefix = "{{", suffix = "}}", variables = {}, excludeEnvVariables = false, } = {}) {
     const envVars = process.env || {};
     let finalVars = variables || {};
     if (!excludeEnvVariables) {
@@ -15,3 +17,4 @@ export default function vitePluginHtmlVariables({ prefix = "{{", suffix = "}}", 
         },
     };
 }
+exports.default = vitePluginHtmlVariables;

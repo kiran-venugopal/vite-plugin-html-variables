@@ -13,7 +13,7 @@ export type VitePluginHtmlVariablesConfig = {
    * eg: {TITLE_VALUE:"My Title"} */
   variables?: VariableRecords;
   /** to exclude env variables from the html file. Default: false */
-  excludeEnvVariables: boolean;
+  excludeEnvVariables?: boolean;
 };
 
 export default function vitePluginHtmlVariables({
@@ -21,7 +21,7 @@ export default function vitePluginHtmlVariables({
   suffix = "}}",
   variables = {},
   excludeEnvVariables = false,
-}: VitePluginHtmlVariablesConfig) {
+}: VitePluginHtmlVariablesConfig = {}) {
   const envVars = process.env || {};
   let finalVars = variables || {};
 

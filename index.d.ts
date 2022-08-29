@@ -11,9 +11,9 @@ export declare type VitePluginHtmlVariablesConfig = {
      * eg: {TITLE_VALUE:"My Title"} */
     variables?: VariableRecords;
     /** to exclude env variables from the html file. Default: false */
-    excludeEnvVariables: boolean;
+    excludeEnvVariables?: boolean;
 };
-export default function vitePluginHtmlVariables({ prefix, suffix, variables, excludeEnvVariables, }: VitePluginHtmlVariablesConfig): {
+export default function vitePluginHtmlVariables({ prefix, suffix, variables, excludeEnvVariables, }?: VitePluginHtmlVariablesConfig): {
     name: string;
     transformIndexHtml(html: string): string;
 };

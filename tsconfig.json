@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "ES2015",
     "outDir": "./",
     "esModuleInterop": true,
     "strict": true /* Enable all strict type-checking options. */,
     "declaration": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "module": "CommonJS"
   },
   "exclude": ["node_modules"],
   "buildOptions": {

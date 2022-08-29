@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-html-variables",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "vite js plugin to use variables in html files",
   "main": "index.js",
   "keywords": [
@@ -13,6 +13,10 @@
   ],
   "author": "Kiran V",
   "license": "ISC",
+  "repository": {
+    "url": "https://github.com/kiran-venugopal/vite-plugin-html-variables"
+  },
+  "homepage": "https://github.com/kiran-venugopal/vite-plugin-html-variables#vite-plugin-html-variables",
   "scripts": {
     "build": "tsc"
   },
