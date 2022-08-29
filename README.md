@@ -68,8 +68,11 @@ Now the variable syntax is replaced with its value.
 #### Config object properties
 
 `prefix` - Prefix for the html variable syntax. default: "{{"
+
 `suffix` -  Suffix for the html variable syntax. default: "}}"
+
 `variables` - An object of variables in which key is takes as variable name and value as value. eg: {TITLE_VALUE:"My Title"}
+
 `excludeEnvVariables` - To exclude env variables from the html file. Default: false
 
 You can pass the configuration object as an argument in the `htmlVariables(config)`
